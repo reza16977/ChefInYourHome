@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+    <style>
+     
+ 
+      .main{
+        width: 100 vh;
+        height: 1000px;
+       
+      }
+      .main tr td img{
+        width: 145px;
+        height: 145px;
+        border-radius: 75px;
+      }
+     
+      td{
+        width: 150px;
+        height: 150px;
+        padding:30px;
+        padding-left: 50px;
+      }
+    
+      tr{
+        margin-left:50px;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <nav id="menubar">
+      <ul>
+        <li><a href="recomend.html">추천</a></li>
+        <li><a href="home.html">홈</a></li>
+        <li>
+          <select name="" id="category" onchange="location=this.value;">
+            <option>분류</option>
+            <option value="k.html">한식</option>
+            <option value="w.html">양식</option>
+            <option value="j.html">일보식</option>
+            <option value="ch.html">중식</option>
+          </select>
+        </li>
+        <li><a href="about.html">웹 소개</a></li>
+        <li ><a href="bookmark.html">북마크</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      >
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/images/main.jpg" width="500px;" height="400px" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/main1.jpg" width="500px" height="400px" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/main1.webp" width="500px" height="400px" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/main2.jpg" width="500px" height="400px" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+ <table class="main">
+<tr>
+  <td><img src="/images/비빔냉면.jpg" /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="location.href='비빔냉면.html'">보기</td>
+  <td><img src="/images/피자만두.jpg" /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="location.href='피자만두.html'">보기</td>
+</tr>
+<tr>
+  <td style="padding-bottom: 100px">
+    <img src="/images/덴푸라.jpg" /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="location.href='덴푸라.html'">보기
+  </td>
+  <td style="padding-bottom: 100px">
+    <img src="/images/마라탕.jpg" /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="location.href='마라탕.html'">보기
+  </td>
+</tr>
+<tr>
+  <td><img src="/images/찜닭.jpg" /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="location.href='찜닭.html'">보기</td>
+</tr>
+ </table>
+    
+    <footer id="footer">
+      <p style="font-size: 3px; text-align: center; background-color: #ff8c00">
+        Copyright&copy; 2022AnwariReza
+      </p>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

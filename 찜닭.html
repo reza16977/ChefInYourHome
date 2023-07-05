@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="menubar">
+      <ul>
+        <li><a href="recomend.html">추천</a></li>
+        <li><a href="home.html">홈</a></li>
+        <li>
+          <select name="" id="category" onchange="location=this.value;">
+            <option>분류</option>
+            <option value="k.html">한식</option>
+            <option value="w.html">양식</option>
+            <option value="j.html">일보식</option>
+            <option value="ch.html">중식</option>
+          </select>
+        </li>
+        <li><a href="about.html">웹 소개</a></li>
+        <li><a href="bookmark.html">북마크</a></li>
+      </ul>
+    </nav>
+    <section id="sec">
+      <div class="container">
+        >
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/images/main.jpg" width="500px;" height="400px" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/main1.jpg" width="500px" height="400px" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/main1.webp" width="500px" height="400px" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/main2.jpg" width="500px" height="400px" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div>
+        <div id="img">
+          <img src="/images/찜닭.jpg" width="100%" ; height="100%" ; />
+        </div>
+
+        <div class="centered">
+          <pre>
+ <h2>채료</h2>
+참치캔 85g 1캔
+스팸 200g 한캔
+양파 1/4개
+대파(썬 것 기준) 1.5주먹
+고추장 2스푼
+된장 1스푼
+식초 1스푼
+다시다 반 스푼
+김치 2-3줄기</pre
+          >
+        </div>
+      </div>
+
+      <p id="meth">
+        1 .돼지고기는 핏물을 빼주세요<br />
+        2 .잘익은 김치 한포기를 꺼내서 잘라주세요 친정엄마표 김치라 너무
+        맛있답니다<br />3 .냄비에 들기름 적당히 두르고<br />4 .김치를 넣고
+        볶아주세요<br />5 .다진마늘 한스푼, 설탕 한스푼 넣어주세요<br />6 .
+        종이컵으로 물 8컵 부어서 센불에 끓여주세요 원래는 쌀뜬물을 넣어야되는데
+        없어서 패스했습니다ㅎㅎ<br />7 .핏물 뺀 돼지고기를 넣어주세요ㅊ<br />8
+        .백종원 김치찌개에는 된장이 들어가요 고기잡내 제거에 딱이라고 합니다^^
+        된장 반스푼 넣어주세요<br />9 .양파 반개, 청양고추 한개를 썰어서
+        넣어주세요<br />10 .간장 두스푼반<br />11 . 새우젓 두스푼<br />12
+        .고춧가루 두스푼반 넣어주세요<br />13 .돼지고기 김치찌개는 오래 끓여야
+        더 맛있습니다 중불로 줄여서 오래 끓여주세요~!!14 .마지막에 파 쏭쏭
+        썰어서 마무리하면 돼요^^
+      </p>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+
+      <br />
+      <div class="bot">
+        유튭에서 보고
+        <iframe
+          id="iframe"
+          src="https://www.youtube.com/embed/kfGi3rTct8c"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <a href="bookmark.html" style="text-decoration: none"
+          ><b style="color: white; margin: 40px"
+            >&#128278;북마크 리스트 넣기</b
+          ></a
+        >
+      </div>
+    </section>
+    <footer id="footer">
+      <p style="font-size: 3px; text-align: center; background-color: #ff8c00">
+        Copyright&copy; 2022AnwariReza
+      </p>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

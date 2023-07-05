@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #aboutp {
+        position: inline-block;
+        width: 100 vh;
+        height: 900px;
+      }
+      #selfi {
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="menubar">
+      <ul>
+        <li><a href="recomend.html">추천</a></li>
+        <li><a href="home.html">홈</a></li>
+        <li>
+          <select name="" id="category" onchange="location=this.value;">
+            <option>분류</option>
+            <option value="k.html">한식</option>
+            <option value="w.html">양식</option>
+            <option value="j.html">일보식</option>
+            <option value="ch.html">중식</option>
+          </select>
+        </li>
+        <li><a href="about.html">웹 소개</a></li>
+        <li><a href="bookmark.html">북마크</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/images/main.jpg" width="500px;" height="400px" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/main1.jpg" width="500px" height="400px" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/main1.webp" width="500px" height="400px" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/main2.jpg" width="500px" height="400px" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div id="aboutp" style="margin-left: 30px; margin-right: 0px">
+        <br /><br /><br />
+        <h1>About</h1>
+        <br />
+        <p>
+          Site Builder 보고서는 웹 사이트 작성자 검토에서 가장 잘 알려져 있고
+          가장 신뢰할 수 있는 이름입니다. 당사는 Site Builder 보고서의 모든
+          내용을 정확하고 최신 상태로 유지하기 위해 최선을 다하고 있습니다.
+          웹사이트 구축업체들이 자주 바뀌는 만큼 1년에 한 번 기사 업데이트를
+          목표로 하고 있다.
+        </p>
+        <br />
+        <h2>Affiliate Links</h2>
+        <br />
+        <p>
+          Site Builder Report는 제휴 마케팅 프로그램에 참여하지만, 어떤 제품을
+          다루도록 선택하는지는 영향을 미치지 않습니다. 커미션은 단순히 우리가
+          하는 일을 지원하는 데 도움이 된다. 우리는 제휴사 링크가 있는 곳이라면
+          어디든 명확하게 공개한다. 제휴사 링크가 있는 웹 사이트를 읽을 때 좋은
+          방법은 스니프 테스트를 적용하는 것입니다. 솔직한 리뷰는 종종 명확하고
+          직접적인 언어를 사용한다. 불성실한 리뷰는 유행어, 막연한 언어, 지나친
+          칭찬 뒤에 숨어 있는 경우가 많다. 웹사이트를 비판적으로 읽는 것은 결코
+          실수가 아니다.
+        </p>
+        <br />
+        <h2>Founder</h2>
+        <br />
+        <img src="/images/selfi.jpg" id="selfi" /><br /><br />
+        <p>안와리 레자</p>
+
+        <p>한림대학교</p>
+
+        <p>강원 춘천시</p>
+        <br />
+        <pre><span>&#128222;</span><i>천화번호</i> : 01066489255</pre>
+
+        <pre><span>&#128231;</span> <i>이메일</i> : reza16977@gmail.com</pre>
+      </div>
+    </section>
+    <footer id="footer">
+      <p style="font-size: 3px; text-align: center; background-color: #ff8c00">
+        Copyright&copy; 2022AnwariReza
+      </p>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
